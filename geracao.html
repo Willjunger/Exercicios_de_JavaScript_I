@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha(){
+		
+		document.write("<br>");
+	
+	
+	}
+	
+	function mostra(geracaoBr){
+	
+		document.write(geracaoBr);
+		pulaLinha();
+	}
+	
+	var hoje = 2018;
+	var brasil = 1500;
+	var qtdAnos = hoje - brasil;
+	var geracao = 28;
+	var qtdGeracao = qtdAnos/geracao;
+
+	mostra("A quantidade de gerações é: "+ Math.round(qtdGeracao));
+
+
+</script>
