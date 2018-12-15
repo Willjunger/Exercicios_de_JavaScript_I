@@ -4,7 +4,6 @@
 
     function pulaLinha() {
         document.write("<br>");
-		document.write("<br>");
     }
 
     function mostra(frase) {
@@ -13,13 +12,14 @@
         pulaLinha();
     }
 
-		
-	var tabuada = parseInt(prompt("Qual tabuada você quer?"));
+	var idade = parseInt(prompt("Digite sua idade"));
 	
-	for(var multiplicador = 1; multiplicador <=10; multiplicador++){
-		mostra(tabuada * multiplicador);
-		
-	}   
+	while ( isNaN(idade)){
 	
+		idade = parseInt(prompt("Digite sua idade"));
+	}
+
+	mostra("Sua idade é " + idade);	
 	
+   
 </script>
